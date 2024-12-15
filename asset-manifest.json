@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/https;//socryptos.hithub.io/piggy/static/css/main.a335846c.css",
-    "main.js": "/https;//socryptos.hithub.io/piggy/static/js/main.100726cb.js",
-    "static/media/oinknomics.png": "/https;//socryptos.hithub.io/piggy/static/media/oinknomics.0de766335ce966c899a4.png",
-    "static/media/slop-bg.png": "/https;//socryptos.hithub.io/piggy/static/media/slop-bg.7487c328d06613c35600.png",
-    "static/media/piggy.png": "/https;//socryptos.hithub.io/piggy/static/media/piggy.df74d3302a931be9ed49.png",
-    "static/media/animalFarm.jpeg": "/https;//socryptos.hithub.io/piggy/static/media/animalFarm.e98fd3fe4abf18a9c08d.jpeg",
-    "static/media/piggysticker2.png": "/https;//socryptos.hithub.io/piggy/static/media/piggysticker2.f60be34da6300fa56df8.png",
-    "static/media/piggy_logo.jpeg": "/https;//socryptos.hithub.io/piggy/static/media/piggy_logo.a15583c90d49f6f4694e.jpeg",
-    "index.html": "/https;//socryptos.hithub.io/piggy/index.html",
-    "main.a335846c.css.map": "/https;//socryptos.hithub.io/piggy/static/css/main.a335846c.css.map",
-    "main.100726cb.js.map": "/https;//socryptos.hithub.io/piggy/static/js/main.100726cb.js.map"
+    "main.css": "/piggy/static/css/main.31e580ad.css",
+    "main.js": "/piggy/static/js/main.b828bfc5.js",
+    "static/media/oinknomics.png": "/piggy/static/media/oinknomics.0de766335ce966c899a4.png",
+    "static/media/slop-bg.png": "/piggy/static/media/slop-bg.7487c328d06613c35600.png",
+    "static/media/piggy.png": "/piggy/static/media/piggy.df74d3302a931be9ed49.png",
+    "static/media/animalFarm.jpeg": "/piggy/static/media/animalFarm.e98fd3fe4abf18a9c08d.jpeg",
+    "static/media/piggysticker2.png": "/piggy/static/media/piggysticker2.f60be34da6300fa56df8.png",
+    "static/media/piggy_logo.jpeg": "/piggy/static/media/piggy_logo.a15583c90d49f6f4694e.jpeg",
+    "index.html": "/piggy/index.html",
+    "main.31e580ad.css.map": "/piggy/static/css/main.31e580ad.css.map",
+    "main.b828bfc5.js.map": "/piggy/static/js/main.b828bfc5.js.map"
   },
   "entrypoints": [
-    "static/css/main.a335846c.css",
-    "static/js/main.100726cb.js"
+    "static/css/main.31e580ad.css",
+    "static/js/main.b828bfc5.js"
   ]
 }
