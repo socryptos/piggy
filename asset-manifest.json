@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/piggy/static/css/main.796750ce.css",
+    "main.css": "/piggy/static/css/main.6ff2c5fc.css",
     "main.js": "/piggy/static/js/main.cfe4a324.js",
     "static/media/oinknomics.png": "/piggy/static/media/oinknomics.0de766335ce966c899a4.png",
     "static/media/slop-bg.png": "/piggy/static/media/slop-bg.7487c328d06613c35600.png",
@@ -9,11 +9,11 @@
     "static/media/piggysticker2.png": "/piggy/static/media/piggysticker2.f60be34da6300fa56df8.png",
     "static/media/piggy_logo.jpeg": "/piggy/static/media/piggy_logo.a15583c90d49f6f4694e.jpeg",
     "index.html": "/piggy/index.html",
-    "main.796750ce.css.map": "/piggy/static/css/main.796750ce.css.map",
+    "main.6ff2c5fc.css.map": "/piggy/static/css/main.6ff2c5fc.css.map",
     "main.cfe4a324.js.map": "/piggy/static/js/main.cfe4a324.js.map"
   },
   "entrypoints": [
-    "static/css/main.796750ce.css",
+    "static/css/main.6ff2c5fc.css",
     "static/js/main.cfe4a324.js"
   ]
 }
