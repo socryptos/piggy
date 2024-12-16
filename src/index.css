@@ -74,7 +74,6 @@ a {
 }
 
 
-/* EXPLORE PAGE */
 
 .home {
   display: flex;
@@ -84,129 +83,6 @@ a {
   height: 100vh;
 }
 
-.nav {
-  position: relative;
-  height: 100vh;
-  width: 15vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: rgb(12, 1, 34);
-  border-right: 2px dashed purple;
-  transition: 0.3s;
-}
-
-.nav .toggler img {
-  transform: rotateY(180deg);
-}
-
-.navClosed .toggler img {
-  transform: rotateY(0deg);
-}
-
-.toggler {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  height: 40px;
-  width: 40px;
-  right: -102px;
-  top: 0;
-  z-index: 3;
-  border: 30px solid;
-  border-color: transparent transparent transparent #ff13f0;
-}
-
-.toggler:hover {
-  cursor: pointer;
-}
-
-.toggler img {
-  position: relative;
-  left: -35px;
-  top: 8px;
-}
-
-.socials, .info {
-  scrollbar-width: none;
-  overflow: hidden;
-  position: relative;
-  margin: 50px 0;
-  max-height: calc(50% - 20px);
-  overflow: auto;
-  font-size: 1.3em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.socials>div, .info>div {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 60px;
-  transition: 0.3s;
-}
-
-.socials>div:hover, .info>div:hover:not(.info__name) {
-  background-color: #60005a;
-  cursor: pointer;
-}
-
-.nav .info a, .nav .socials a{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-}
-
-.info__name img {
-  border-radius: 20px;
-}
-
-.navClosed {
-  position: relative;
-  color: transparent;
-  height: 100vh;
-  width: 5vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: rgb(12, 1, 34);
-  border-right: 2px dashed purple;
-  transition: 0.3s;
-}
-.navClosed a {
-  width: 100%;
-  height: 100%;
-  color:#ff13f0;
-  text-shadow: 2px 2px 90px ;
-}
-
-.nav a {
-  width: 100%;
-  height: 100%;
-  color:#ff13f0;
-  text-shadow: 1px 1px 1px ;
-}
-
-
-
-/* content */
-
-.content {
-  color: #ff13f0;
-  flex-grow: 1;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  background-image: url(./images_videos/slop-bg.png);
-  background-size: cover; /* заставляет изображение заполнять контейнер полностью */
-  background-position: center; /* центрирование изображения */
-  background-repeat: no-repeat; /* не повторять изображение */
-}
 
 
 .hidden {
@@ -221,4 +97,28 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 700px) and (max-width:1100px) {
+  footer {
+    border-top: 2px dashed #ff13f0;;
+    font-size: 1.5em;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7vh;
+  }
+}
+
+@media (max-width:699px) {
+  footer {
+    border-top: 2px dashed #ff13f0;;
+    font-size: 1.5em;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7vh;
+  }
 }

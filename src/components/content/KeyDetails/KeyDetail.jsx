@@ -1,10 +1,18 @@
 import styles from './KeyDetails.module.css'
 
-function KeyDetails() {
+function KeyDetails(props) {
 
     function handleCopy() {
         const textToCopy = document.getElementById("address").innerText;
+        console.log(props.size)
+        try {
+            navigator.clipboard.writeText(textToCopy);
+        } catch (err) {}
+    }
 
+    function handleCopyMobile() {
+        const textToCopy = "0xe3CF8dBcBDC9B220ddeaD0bD6342E245DAFF934d"
+        console.log(props.size)
         try {
             navigator.clipboard.writeText(textToCopy);
         } catch (err) {}
@@ -16,7 +24,12 @@ function KeyDetails() {
             <div className={styles.wrapper__info}>
                 <div className={styles.wrapper__info_title}>Key details:</div>
                 <div className={styles.wrapper__info_text}>Token address:</div>
-                <div id="address" className={styles.wrapper__info_address} onClick={handleCopy}>0xe3CF8dBcBDC9B220ddeaD0bD6342E245DAFF934d</div>
+                {
+                    props.size != "s" ?
+                    <div id="address" className={styles.wrapper__info_address} onClick={handleCopy}>0xe3CF8dBcBDC9B220ddeaD0bD6342E245DAFF934d</div>
+                    :
+                    <div id="address" className={styles.wrapper__info_address} onClick={handleCopyMobile}>Coppy address</div>
+                }
                 <div className={styles.wrapper__info_supply}>Token Supply: 69,000,000,000</div>
                 <div className={styles.wrapper__info_chain}>Chain: Base</div>
             </div>

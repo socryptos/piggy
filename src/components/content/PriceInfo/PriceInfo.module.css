@@ -1,21 +1,70 @@
-.wrapper{
-    text-shadow: none;
-    height: 100px;
-    display: flex;
-    justify-content: end;
-    align-items: center;  
-    font-size: 1em;
-    background-color: rgb(12, 1, 34);
+.wrapper {
+  text-shadow: none;
+  height: 100px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 1em;
+  background-color: rgb(12, 1, 34);
+}
+
+.wrapper h3 {
+  display: flex;
+  height: 100%;
+  width: 250px;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper h3:not(:nth-child(1)) {
+  border-left: 4px dashed purple;
+}
+
+@media (min-width: 700px) and (max-width: 1300px) {
+  .wrapper {
+    text-align: center;
+    font-size: 14px;
   }
-  
-  .wrapper h3{
-    display: flex;
-    height: 100%;
-    width: 250px;
-    justify-content: center;
-    align-items: center;
+
+  .wrapper h3 {
+    width: 100%;
+    border-bottom: 2px dashed purple;
+    padding: 0 10px;
   }
-  
-  .wrapper h3:not(:nth-child(1)){
-    border-left: 4px dashed purple;
+
+  .wrapper h3:nth-child(3),
+  .wrapper h3:nth-child(4) {
+    width: 100%;
+    border-bottom: none;
   }
+
+  .wrapper h3:not(:nth-child(1)) {
+    border-left: 2px dashed purple;
+  }
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 15vh;
+    font-size: 12px;
+  }
+
+  .wrapper h3 {
+    width: 100%;
+    border-bottom: 2px dashed purple;
+  }
+
+  .wrapper h3:nth-child(3),
+  .wrapper h3:nth-child(4) {
+    width: 100%;
+    border-bottom: none;
+  }
+
+  .wrapper h3:not(:nth-child(1)) {
+    border-left: 2px dashed purple;
+  }
+}

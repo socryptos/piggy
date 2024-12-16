@@ -1,0 +1,22 @@
+.wrapper{
+    position: fixed;
+    z-index: 6;
+    bottom: 0;
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(12, 1, 34);
+}
+
+.wrapper>div{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    height: 40px;
+    border-radius: 50px;
+}

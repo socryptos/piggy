@@ -4,7 +4,7 @@
   overflow-y: scroll;
   overflow-x: hidden;
   background-image: url(../../images_videos/slop-bg.png);
-  background-size: cover; /* заставляет изображение заполнять контейнер полностью */
-  background-position: center; /* центрирование изображения */
-  background-repeat: no-repeat; /* не повторять изображение */
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; 
 }

@@ -8,14 +8,14 @@ import { PriceInfo } from "./PriceInfo/PiceInfo";
 import styles from './Content.module.css'
 
 
-function Information() {
+function Information(props) {
 
     return(
         <div className={styles.content}>
             <PriceInfo/>
-            <Intro/>
-            <KeyDetails/>
-            <HowToBuy/>
+            <Intro size={props.size}/>
+            <KeyDetails size={props.size}/>
+            <HowToBuy />
             <Bucet/>
             <Tokenomics/>
             <footer>© ® 2024™ $PIGGY™</footer>

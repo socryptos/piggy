@@ -1,84 +1,151 @@
 .wrapper {
-    border-top: 4px dashed purple;
-    border-bottom: 4px dashed purple;
+  margin-top: 100px;
+  border-top: 4px dashed purple;
+  border-bottom: 4px dashed purple;
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.wrapper > div {
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  width: 100%;
+}
+
+.wrapper__info {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper__info > div {
+  font-size: 1.2em;
+  text-shadow: 1px 1px 1px;
+  border-bottom: 2px dashed #ff13f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.wrapper__info_address {
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.wrapper__info_address:hover {
+  position: relative;
+  cursor: pointer;
+  text-shadow: 5px 5px 10px #ff13f0;
+  transition: 0.5s;
+}
+
+.wrapper__info_address::after {
+  content: "Copy address";
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  transform: rotate(10deg);
+  font-size: 0.8em;
+  text-shadow: none;
+}
+
+.wrapper__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.wrapper__links > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 50px;
+  border-radius: 25px;
+  border: 2px dashed #ff13f0;
+  color: #ff13f0;
+  transition: 0.3s;
+}
+
+.wrapper__links > a:hover {
+  color: wheat;
+  box-shadow: 0px 0px 20px purple;
+  cursor: pointer;
+  background-color: rgb(173, 3, 173);
+  transition: 0.3s;
+}
+
+@media (min-width: 700px) and (max-width: 1300px) {
+  .wrapper {
+    position: static;
+    margin-top: 0px;
+    border-top: none;
+    border-bottom: 4px dashed #ff13f0;
     padding: 50px 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-  }
-  
-.wrapper>div {
-    font-size: 1.2em;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
+    gap: 50px;
     width: 100%;
+    font-size: 16px;
   }
-  
-.wrapper__info {
-    position: relative;
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    position: static;
+    margin-top: 0px;
+    border-top: none;
+    border-bottom: 4px dashed #ff13f0;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-.wrapper__info>div{
-    font-size: 1.2em;
-    text-shadow: 1px 1px 1px ;
-    border-bottom: 2px dashed #ff13f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-  }
-  
-.wrapper__info_address{
-    position: relative;
-    cursor: pointer;
-    transition: 0.5s;
-  }
-  
-.wrapper__info_address:hover{
-    position: relative;
-    cursor: pointer;
-    text-shadow: 5px 5px 10px #ff13f0;
-    transition: 0.5s;
-  }
-  
-.wrapper__info_address::after{
-    content: "Copy address";
-    position: absolute;
-    top: -40px;
-    right: -40px;
-    transform: rotate(10deg);
     font-size: 0.8em;
-    text-shadow: none
   }
-  
-.wrapper__links{
+
+  .wrapper__links > a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-  
-  }
-.wrapper__links>a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
+    width: 50vw;
     height: 50px;
     border-radius: 25px;
-    border:  2px dashed #ff13f0;
+    border: 2px dashed #ff13f0;
     color: #ff13f0;
     transition: 0.3s;
   }
-  
-.wrapper__links>a:hover{
-    color: wheat;
-    box-shadow: 0px 0px 20px purple;
-    cursor: pointer;
-    background-color: rgb(173, 3, 173);
-    transition: 0.3s;
+
+  .wrapper__info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
+  .wrapper__info_address {
+    text-shadow: 1px 1px 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 0.6em;
+  }
+
+  .wrapper__info_address::after {
+    content: "tap to copy";
+    position: absolute;
+    top: 0px;
+    right: -80px;
+    transform: rotate(10deg);
+    font-size: 12px;
+    text-shadow: none;
+    border-bottom: 1px solid #ff13f0;
+  }
+}
