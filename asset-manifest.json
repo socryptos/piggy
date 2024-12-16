@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/piggy/static/css/main.757f6c22.css",
-    "main.js": "/piggy/static/js/main.86ac6168.js",
+    "main.css": "/piggy/static/css/main.3435f94c.css",
+    "main.js": "/piggy/static/js/main.9cb56a12.js",
     "static/media/oinknomics.png": "/piggy/static/media/oinknomics.0de766335ce966c899a4.png",
     "static/media/slop-bg.png": "/piggy/static/media/slop-bg.7487c328d06613c35600.png",
     "static/media/piggy.png": "/piggy/static/media/piggy.df74d3302a931be9ed49.png",
@@ -9,11 +9,11 @@
     "static/media/piggysticker2.png": "/piggy/static/media/piggysticker2.f60be34da6300fa56df8.png",
     "static/media/piggy_logo.jpeg": "/piggy/static/media/piggy_logo.a15583c90d49f6f4694e.jpeg",
     "index.html": "/piggy/index.html",
-    "main.757f6c22.css.map": "/piggy/static/css/main.757f6c22.css.map",
-    "main.86ac6168.js.map": "/piggy/static/js/main.86ac6168.js.map"
+    "main.3435f94c.css.map": "/piggy/static/css/main.3435f94c.css.map",
+    "main.9cb56a12.js.map": "/piggy/static/js/main.9cb56a12.js.map"
   },
   "entrypoints": [
-    "static/css/main.757f6c22.css",
-    "static/js/main.86ac6168.js"
+    "static/css/main.3435f94c.css",
+    "static/js/main.9cb56a12.js"
   ]
 }
