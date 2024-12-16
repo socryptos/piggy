@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import styles from './PriceInfo.module.css'
 
 async function getLsatTokenInfo() {
     const url = `https://api.dexscreener.com/latest/dex/pairs/base/0xf16eaf2801d9ded435b7fc5f0ec78048c4142c3e`;
@@ -44,11 +45,11 @@ function PriceInfo() {
     }
 
     return (
-        <div id="priceInfo" className="priceInfo">
-            <h3>Market Cap : {Math.round(Number(data.marketCap)).toLocaleString("en-US")}</h3>
+        <div id="priceInfo" className={styles.wrapper}>
+            <h3>Market Cap : ${Math.round(Number(data.marketCap)).toLocaleString("en-US")}</h3>
             <h3>Price Change : {Math.round(Number(data.priceChange["h24"])).toLocaleString("en-US")}%</h3>
-            <h3>Volume : {Math.round(Number(data.volume["h24"])).toLocaleString("en-US")}</h3> 
-            <h3>Liquidity : {Math.round(Number(data.liquidity)).toLocaleString("en-US")}</h3> 
+            <h3>Volume 24h : ${Math.round(Number(data.volume["h24"])).toLocaleString("en-US")}</h3> 
+            <h3>Liquidity : ${Math.round(Number(data.liquidity)).toLocaleString("en-US")}</h3> 
         </div>
     );
        

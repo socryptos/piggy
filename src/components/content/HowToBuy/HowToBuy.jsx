@@ -1,6 +1,6 @@
 import React, { useState } from "react"
-import photo from "../images_videos/piggy.png"
-
+import photo from "../../../images_videos/piggy.png"
+import styles from "./howToBuy.module.css"
 
 
 function HowToBuy() {
@@ -14,15 +14,15 @@ function HowToBuy() {
 
     return(
         <>
-            <div id='howToBuy'  className="howToBuy">
-                <div className="howToBuy__uni">
-                    <div className="for_uni">
-                        <iframe className={isVisible ? "" : "ihidden"} src="https://app.uniswap.org/swap?chain=base&inputCurrency=NATIVE&outputCurrency=0xe3cf8dbcbdc9b220ddead0bd6342e245daff934d" frameborder="1"></iframe>
-                        <img className={isVisible ? "ihidden" : ''} src={photo} alt="piggy" />
+            <div id='howToBuy'  className={styles.wrapper}>
+                <div className={styles.wrapper__uni}>
+                    <div className={styles.forUni}>
+                        <iframe className={isVisible ? "" : `${styles.ihidden}`} src="https://app.uniswap.org/swap?chain=base&inputCurrency=NATIVE&outputCurrency=0xe3cf8dbcbdc9b220ddead0bd6342e245daff934d" frameborder="1"></iframe>
+                        <img className={isVisible ? `${styles.ihidden}` : ''} src={photo} alt="piggy" />
                     </div>
-                    <div onClick={handleSwith} className={`buy_btn ${isVisible ? "hidden" : ""}`} >Buy Piggy Now</div>
+                    <div onClick={handleSwith} className={`${styles.buyBtn} ${isVisible ? `${styles.hidden}` : ""}`} >Buy Piggy Now</div>
                 </div>
-                <div className="howToBuy__info">
+                <div className={styles.wrapper__info}>
                     <h2>How To Buy $PIGGY</h2>
                     <ul>
                         <li>

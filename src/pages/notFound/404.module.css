@@ -1,0 +1,12 @@
+.notFound {
+    background-image: url(../../images_videos/slop-bg.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    text-shadow: 1px 1px 1px #ff13f0;
+    color: #ff13f0;
+  }

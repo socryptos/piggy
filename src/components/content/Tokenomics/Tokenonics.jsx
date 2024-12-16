@@ -1,10 +1,11 @@
-import photo from '../images_videos/oinknomics.png'
+import photo from '../../../images_videos/oinknomics.png'
+import styles from './Tokenomics.module.css'
 
 function Tokenomics() {
 
     return(
         <>
-            <div id="oinkenomicks" className="oinkenomicks">
+            <div id="oinkenomicks" className={styles.wrapper}>
                 <h2>Pggy is for the people!</h2>
                 <img src={photo} alt="oinknomics" />
             </div>
