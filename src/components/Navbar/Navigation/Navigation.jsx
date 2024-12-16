@@ -6,7 +6,7 @@ import { InactiveNav } from "../InactiveNav/InactiveNav";
 import { ActiveNav } from "../ActiveNav/ActiveNav";
 
 
-function Navigation() {
+function Navigation(props) {
 
     const [ isActive, setActive ] = useState(false)
 

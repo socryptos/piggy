@@ -53,18 +53,18 @@
     font-size: 12px;
   }
 
-  .wrapper h3 {
+  .wrapper>h3 {
     width: 100%;
     border-bottom: 2px dashed purple;
   }
 
-  .wrapper h3:nth-child(3),
-  .wrapper h3:nth-child(4) {
-    width: 100%;
-    border-bottom: none;
+  .wrapper h3:not(:nth-child(1)) {
+    border-left: none
   }
 
-  .wrapper h3:not(:nth-child(1)) {
+  .wrapper h3:nth-child(2),
+  .wrapper h3:nth-child(4) {
+    width: 100%;
     border-left: 2px dashed purple;
   }
 }
