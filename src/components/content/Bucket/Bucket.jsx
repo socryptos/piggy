@@ -13,7 +13,7 @@ function Bucet() {
                     </div>
                     <div className={styles.wrapper__roasting}>
                         <h2>🎄 The Christmas Roast</h2>
-                        <p>Any unclaimed $PIGGY will be burned on</p>
+                        <p>Any unclaimed $PIGGY will be burned on Dec 25th, 2024. Ownership of the $PIGGY contract will be revoked after this date.</p>
                     </div>
             </div>
         </>
