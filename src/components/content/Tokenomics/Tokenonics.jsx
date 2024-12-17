@@ -7,7 +7,7 @@ function Tokenomics() {
         <>
             <div id="oinkenomicks" className={styles.wrapper}>
                 <h2>Pggy is for the people!</h2>
-                <img src={photo} alt="oinknomics" />
+                <div className={styles.forImg}></div>
             </div>
         </>
     )

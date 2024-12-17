@@ -236,4 +236,15 @@
     line-height: 50px;
     text-align: center;
   }
+
+  .answer {
+    opacity: 1;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    border-bottom: 5px dashed #ff13f0;
+    text-align: center;
+    width: 180px;
+    transition: 0.5s;
+  }
 }
